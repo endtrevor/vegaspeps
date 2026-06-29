@@ -9,7 +9,7 @@
 body{background:var(--bg);color:var(--ink);font-family:'Archivo',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
 #gate{position:fixed;inset:0;z-index:9999;background:var(--bg);display:flex;align-items:center;justify-content:center}
 .gate-card{background:var(--surface);border:1.5px solid var(--ink);padding:50px 44px 40px;max-width:420px;width:100%;text-align:center}
-.gate-logo{display:block;width:230px;height:auto;margin:0 auto 20px}
+.gate-logo{display:block;width:230px;height:auto;margin:0 auto 20px;image-rendering:auto;-webkit-backface-visibility:hidden;transform:translateZ(0)}
 .gate-title{font-weight:700;font-size:24px;letter-spacing:-0.02em;margin-bottom:6px}
 .gate-sub{font-family:'Spline Sans Mono',monospace;font-size:9.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--faint);margin-bottom:34px}
 .gate-label{display:block;text-align:left;font-family:'Spline Sans Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
@@ -25,7 +25,7 @@ body{background:var(--bg);color:var(--ink);font-family:'Archivo',sans-serif;font
 .ban{background:var(--ink);color:var(--bg);text-align:center;padding:9px 20px;font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:0.05em}
 header{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1.5px solid var(--ink)}
 .hwrap{max-width:1240px;margin:0 auto;padding:0 36px;height:72px;display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;align-items:center;gap:13px;text-decoration:none;color:inherit}.logo-img{height:62px;width:auto;display:block}
+.logo{display:flex;align-items:center;gap:13px;text-decoration:none;color:inherit}.logo-img{height:62px;width:auto;display:block;image-rendering:auto;-webkit-backface-visibility:hidden;transform:translateZ(0)}
 .logo-name{font-size:23px;letter-spacing:-0.015em;color:var(--ink);line-height:1}.ln-v{font-weight:500}.ln-p{font-weight:800;color:var(--red)}.ln-d{font-weight:500;color:var(--faint);font-size:0.7em}
 .logo-tag{display:block;margin-top:3px;font-family:'Spline Sans Mono',monospace;font-size:8.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--rust);line-height:1}
 nav{display:flex;gap:28px}
@@ -83,7 +83,7 @@ nav a.nav-active{color:var(--ink);border-bottom-color:var(--rust)}
 .astat-l{font-family:'Spline Sans Mono',monospace;font-size:9.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--faint);margin-top:8px}
 footer{max-width:1240px;margin:0 auto;padding:40px 36px;display:flex;justify-content:space-between;gap:36px;flex-wrap:wrap}
 .foot-l{max-width:560px}.foot-logo{display:flex;align-items:center;gap:10px;margin-bottom:13px}
-.foot-logo-img{height:34px;width:auto;display:block}.foot-logo-n{font-weight:700;font-size:16px}
+.foot-logo-img{height:34px;width:auto;display:block;image-rendering:auto;-webkit-backface-visibility:hidden;transform:translateZ(0)}.foot-logo-n{font-weight:700;font-size:16px}
 .foot-fine{font-size:11px;color:var(--faint);line-height:1.65}.foot-fine strong{color:var(--muted);font-weight:600}
 .foot-r{font-family:'Spline Sans Mono',monospace;font-size:10px;color:var(--faint);text-align:right;line-height:1.8}
 .card[data-hide=true]{display:none}
@@ -338,7 +338,7 @@ body{background:var(--bg);color:var(--ink);font-family:'Archivo',sans-serif;padd
 
 <!-- ===== CATALOG VIEW ===== -->
 <section id="view-catalog" class="view">
-<div class="hero"><div class="hero-in"><div><h1 class="hero-h">Advanced peptide <span>research compounds</span></h1>
+<div class="hero"><div class="hero-in"><div><h1 class="hero-h">Advanced peptide<br><span>research compounds</span></h1>
 <p class="hero-p">A curated catalog of research-grade peptides and bioactive compounds for qualified researchers. All products listed are for scientific investigation only and are not intended for human use, diagnosis, or treatment.</p></div>
 <div class="hero-meta">
   <div class="hero-meta-row"><span class="hmr-l">Total Compounds</span><span class="hmr-v">20</span></div>
