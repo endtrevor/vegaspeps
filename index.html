@@ -1098,7 +1098,7 @@ buildRuler(30);
 
 <script>
 const PW=['BigBear2026','LVPeps'];
-function unlock(){const i=document.getElementById('pw'),e=document.getElementById('err');if(PW.indexOf(i.value)!==-1){document.getElementById('gate').style.display='none';document.getElementById('site').classList.add('on');sessionStorage.setItem('bbr','1');showView('catalog');}else{i.classList.add('error');e.textContent='Incorrect access code.';setTimeout(()=>i.classList.remove('error'),400);i.value='';i.focus();}}
+function unlock(){const i=document.getElementById('pw'),e=document.getElementById('err');if(PW.map(function(p){return p.toLowerCase();}).indexOf(i.value.trim().toLowerCase())!==-1){document.getElementById('gate').style.display='none';document.getElementById('site').classList.add('on');sessionStorage.setItem('bbr','1');showView('catalog');}else{i.classList.add('error');e.textContent='Incorrect access code.';setTimeout(()=>i.classList.remove('error'),400);i.value='';i.focus();}}
 if(sessionStorage.getItem('bbr')==='1'){document.getElementById('gate').style.display='none';document.getElementById('site').classList.add('on');}
 document.getElementById('pw').focus();
 const GDATA=[[{"dose": "10 mg", "id": "BBR-001", "kit": 40, "bare": 35}, {"dose": "20 mg", "id": "BBR-002", "kit": 55, "bare": 45}], [{"dose": "5 mg", "id": "BBR-007", "kit": 30, "bare": 20}, {"dose": "10 mg", "id": "BBR-006", "kit": 50, "bare": 40}]];
